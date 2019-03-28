@@ -1,0 +1,8 @@
+# compilation
+*.o
+
+# executable
+*.out
+
+# ouverture accidentelle de RStudio
+.Rhistory
