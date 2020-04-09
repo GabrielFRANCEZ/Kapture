@@ -23,8 +23,9 @@ void kpt::Character::move (unsigned int col, unsigned int line)
     {
         return;
     }
-    unsigned int dl = std::abs(line - _line);
-    unsigned int dc = std::abs(col - _col);
+
+    unsigned int dl = std::abs(int (line - _line));
+    unsigned int dc = std::abs(int(col - _col));
     if (dc > 1 || dl > 1 || (dl == 0 && dc == 0))
     {
         return;
